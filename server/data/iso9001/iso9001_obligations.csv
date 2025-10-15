@@ -1,0 +1,40 @@
+ObligationId,Clause,Title,Description,RequiredRecords,PrimaryEvidenceHint,ControlRef
+ISO9001-4.1,4.1,Understanding the organization and its context,"Determine internal/external issues relevant to purpose and strategic direction.",Context register|SWOT,Context analysis doc,QMS-CTX
+ISO9001-4.2,4.2,Understanding needs and expectations of interested parties,"Identify interested parties and their requirements.",Interested parties register,Stakeholder map,QMS-CTX
+ISO9001-4.3,4.3,Determining the scope of the QMS,"Define scope and justify exclusions.",Scope statement,Approved scope doc,QMS-CTX
+ISO9001-4.4,4.4,Quality management system and its processes,"Establish, implement, maintain and continually improve processes and their interactions.",Process map|Process descriptions|KPIs,Approved process map,QMS-PROC
+ISO9001-5.1,5.1,Leadership and commitment,"Top management demonstrates leadership and commitment to QMS.",Management comms|meeting minutes,Exec memo|MR minutes,QMS-GOV
+ISO9001-5.2,5.2,Quality policy,"Establish, implement, and maintain a quality policy.",Approved quality policy|Communication record,Published policy (controlled),QMS-POL
+ISO9001-5.3,5.3,Organizational roles, responsibilities and authorities,"Assign and communicate responsibilities and authorities.",Org chart|RASCI,Key Personnel export,QMS-RASCI
+ISO9001-6.1,6.1,Actions to address risks and opportunities,"Plan actions to address risks/opportunities and evaluate effectiveness.",Risk & opp register|Action plans,Risk register snapshot,QMS-RISK
+ISO9001-6.2,6.2,Quality objectives and planning,"Set measurable objectives and plan achievement.",Objectives|Plans|Results,Objectives dashboard,QMS-OBJ
+ISO9001-6.3,6.3,Planning of changes,"Changes to QMS shall be carried out in a planned manner.",Change records|approvals,Change log,QMS-CHG
+ISO9001-7.1.1,7.1.1,People,"Determine and provide necessary people for QMS operation.",Resource plan|competence matrix,Headcount & competence report,QMS-RES
+ISO9001-7.1.2,7.1.2,Infrastructure,"Provide and maintain infrastructure.",Maintenance records|capex plans,Facilities/IT maintenance logs,QMS-INF
+ISO9001-7.1.3,7.1.3,Environment for the operation of processes,"Provide environment for operation (physical, social, psychological).",Environment controls|monitoring,Workplace environment policy,QMS-ENV
+ISO9001-7.1.4,7.1.4,Monitoring and measuring resources,"Ensure valid and reliable monitoring & measuring.",Calibration records|verification,Calibration certificates,QMS-MMR
+ISO9001-7.1.5,7.1.5,Organizational knowledge,"Maintain knowledge necessary for operation.",Knowledge register|training records,Confluence/WI index,QMS-KNOW
+ISO9001-7.2,7.2,Competence,"Determine competence and take actions to acquire necessary competence.",Competence matrix|training records,Training matrix & proofs,QMS-COMP
+ISO9001-7.3,7.3,Awareness,"Ensure persons are aware of policy, objectives, contribution, implications.",Induction|attestations,Policy attestations export,QMS-AWR
+ISO9001-7.4,7.4,Communication,"Determine internal/external communications.",Communication plan,Comms plan doc,QMS-COMMS
+ISO9001-7.5,7.5,Documented information,"Control of documented info (creation, update, control).",Document control procedure|master list,Doc register & approvals,QMS-DOC
+ISO9001-8.1,8.1,Operational planning and control,"Plan, implement, control processes incl. criteria and changes; retain evidence.",OP plans|WIs|records,Controlled procedures,QMS-OP
+ISO9001-8.2,8.2,Requirements for products and services,"Customer requirements determination and review.",Contract review records|amendments,Order/contract review,QMS-REQ
+ISO9001-8.3,8.3,Design and development (if applicable),"Plan and control design & development.",Design plan|reviews|verification|validation,Design file (toggleable scope),QMS-DES
+ISO9001-8.4,8.4,Control of externally provided processes/products/services,"Supplier selection, evaluation, monitoring.",ASL|evaluations|re-eval schedule,Supplier evaluation records,QMS-SUP
+ISO9001-8.5,8.5,Production and service provision,"Controlled conditions incl. WI, monitoring, release, delivery.",Production/service records|WI,Work instruction pack,QMS-PRD
+ISO9001-8.5.1,8.5.1,Identification & traceability,"Identify outputs where necessary; traceability records.",Traceability records,Batch/lot tracking,QMS-PRD
+ISO9001-8.5.2,8.5.2,Property belonging to customers/external providers,"Care for property under organization control.",Property logs|incidents,Customer property register,QMS-PRD
+ISO9001-8.5.3,8.5.3,Preservation,"Preserve outputs during processing/delivery.",Preservation procedures|records,Storage/handling logs,QMS-PRD
+ISO9001-8.5.4,8.5.4,Post-delivery activities,"Meet requirements for post-delivery activities.",Service logs|warranty,Service records,QMS-PRD
+ISO9001-8.5.5,8.5.5,Control of changes,"Review and control changes affecting production/service.",Change records|authorizations,Change control form,QMS-PRD
+ISO9001-8.6,8.6,Release of products and services,"Verify requirements met prior to release; retain evidence.",Release records|approvals,Release checklist,QMS-REL
+ISO9001-8.7,8.7,Control of nonconforming outputs,"Identify and control nonconforming outputs.",NC records|dispositions,Nonconforming output log,QMS-NC
+ISO9001-9.1.1,9.1.1,Monitoring, measurement, analysis and evaluation,"Determine what/when/analysis/evaluation.",Monitoring plan|results,KPI dashboard,QMS-PERF
+ISO9001-9.1.2,9.1.2,Customer satisfaction,"Monitor customer perceptions.",Complaint log|surveys|trend,Complaints & CSAT,QMS-CUST
+ISO9001-9.1.3,9.1.3,Analysis and evaluation,"Analyze data to evaluate QMS performance and effectiveness.",Analysis reports,Management metrics,QMS-PERF
+ISO9001-9.2,9.2,Internal audit,"Plan, implement, and maintain audit program; retain evidence.",Audit plan|reports|follow-ups,Internal audit pack,QMS-IA
+ISO9001-9.3,9.3,Management review,"Conduct MR at planned intervals; retain minutes and decisions.",MR agenda|minutes|actions,MR minutes,QMS-MR
+ISO9001-10.1,10.1,General improvement,"Determine opportunities and implement improvements.",Improvement log,Opportunities register,QMS-IMP
+ISO9001-10.2,10.2,Nonconformity and corrective action,"React to NC, evaluate causes, implement actions, review effectiveness.",NC|CAPA records|PIRs,CAPA pack,QMS-CAPA
+ISO9001-10.3,10.3,Continual improvement,"Continually improve suitability, adequacy, and effectiveness of QMS.",CI log|Kaizen board,CI register,QMS-IMP

@@ -1,0 +1,6 @@
+{
+  "currency": "AUD",
+  "legal_rate_per_hour": 450,
+  "baseline_mins_per_classification": 30,
+  "baseline_mins_per_audit_item": 45
+}

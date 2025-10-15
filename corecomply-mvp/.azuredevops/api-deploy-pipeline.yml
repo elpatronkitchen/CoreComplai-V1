@@ -1,0 +1,81 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - api/**
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  dotnetSdkVersion: '8.x'
+
+stages:
+  - stage: Build
+    displayName: 'Build API'
+    jobs:
+      - job: BuildJob
+        displayName: 'Build .NET API'
+        steps:
+          - task: UseDotNet@2
+            displayName: 'Install .NET SDK'
+            inputs:
+              version: $(dotnetSdkVersion)
+
+          - task: DotNetCoreCLI@2
+            displayName: 'Restore packages'
+            inputs:
+              command: 'restore'
+              projects: '**/CoreComply.Api.csproj'
+
+          - task: DotNetCoreCLI@2
+            displayName: 'Build project'
+            inputs:
+              command: 'build'
+              projects: '**/CoreComply.Api.csproj'
+              arguments: '--configuration $(buildConfiguration)'
+
+          - task: DotNetCoreCLI@2
+            displayName: 'Publish project'
+            inputs:
+              command: 'publish'
+              publishWebProjects: false
+              projects: '**/CoreComply.Api.csproj'
+              arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+              zipAfterPublish: true
+
+          - task: PublishPipelineArtifact@1
+            displayName: 'Publish artifact'
+            inputs:
+              targetPath: '$(Build.ArtifactStagingDirectory)'
+              artifact: 'api'
+
+  - stage: Deploy
+    displayName: 'Deploy API'
+    dependsOn: Build
+    condition: succeeded()
+    jobs:
+      - deployment: DeployJob
+        displayName: 'Deploy to Azure App Service'
+        environment: 'production'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: DownloadPipelineArtifact@2
+                  displayName: 'Download artifact'
+                  inputs:
+                    artifact: 'api'
+                    path: '$(Pipeline.Workspace)/api'
+
+                - task: AzureWebApp@1
+                  displayName: 'Deploy to App Service'
+                  inputs:
+                    azureSubscription: '$(ARM_SERVICE_CONNECTION)'
+                    appType: 'webAppLinux'
+                    appName: '$(API_APP_NAME)'
+                    package: '$(Pipeline.Workspace)/api/**/*.zip'
+                    runtimeStack: 'DOTNETCORE|8.0'

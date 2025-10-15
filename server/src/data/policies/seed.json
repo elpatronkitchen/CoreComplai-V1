@@ -1,0 +1,844 @@
+{
+  "policies": [
+    {
+      "id": "pol-001",
+      "code": "POL-01",
+      "title": "Payroll Governance & Accountability",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-manager",
+        "A": "cfo",
+        "S": ["legal", "hr"],
+        "C": ["compliance"],
+        "I": ["all-staff"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-001",
+        "versions": [{
+          "id": "v1-001",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-01-15T00:00:00Z",
+          "bodyMd": "# Payroll Governance & Accountability\n\nEstablishes framework for payroll governance ensuring compliance with Fair Work Act 2009.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-officer", "payroll-manager", "finance"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-15T00:00:00Z",
+      "updatedAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "id": "pol-002",
+      "code": "POL-02",
+      "title": "Classification & Award/EBA Interpretation",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-hr-manager",
+      "rasci": {
+        "R": "hr-manager",
+        "A": "cfo",
+        "S": ["payroll-manager", "legal"],
+        "C": ["employee-relations"],
+        "I": ["hiring-managers"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-002",
+        "versions": [{
+          "id": "v1-002",
+          "v": "1.0",
+          "author": "HR Manager",
+          "createdAt": "2024-01-20T00:00:00Z",
+          "bodyMd": "# Classification & Award/EBA Interpretation\n\nEnsures correct classification of employees and interpretation of Award/EBA provisions.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["hr-officer", "hr-manager", "payroll-manager"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-20T00:00:00Z",
+      "updatedAt": "2024-01-20T00:00:00Z"
+    },
+    {
+      "id": "pol-003",
+      "code": "POL-03",
+      "title": "Timekeeping & Attendance (T&A)",
+      "category": "Core",
+      "status": "Approved",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-manager",
+        "A": "cfo",
+        "S": ["it", "hr"],
+        "C": ["line-managers"],
+        "I": ["all-employees"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-11-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-003",
+        "versions": [{
+          "id": "v1-003",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-02-01T00:00:00Z",
+          "bodyMd": "# Timekeeping & Attendance\n\nDefines time recording requirements, approval workflows, and integration with payroll.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["line-managers", "payroll-officer"],
+        "scope": "All"
+      },
+      "createdAt": "2024-02-01T00:00:00Z",
+      "updatedAt": "2024-09-15T00:00:00Z"
+    },
+    {
+      "id": "pol-004",
+      "code": "POL-04",
+      "title": "Payroll Processing, Approval & SoD",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-officer",
+        "A": "payroll-manager",
+        "S": ["finance"],
+        "C": ["internal-audit"],
+        "I": ["cfo"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-004",
+        "versions": [{
+          "id": "v1-004",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-01-15T00:00:00Z",
+          "bodyMd": "# Payroll Processing, Approval & Segregation of Duties\n\nDefines payroll processing cycles, approval requirements, and SoD controls.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-officer", "payroll-approver", "finance"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-15T00:00:00Z",
+      "updatedAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "id": "pol-005",
+      "code": "POL-05",
+      "title": "STP Phase 2 Reporting & Finalisation",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-officer",
+        "A": "payroll-manager",
+        "S": ["tax-advisor"],
+        "C": ["ato"],
+        "I": ["cfo", "all-employees"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-10-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-005",
+        "versions": [{
+          "id": "v1-005",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-01-10T00:00:00Z",
+          "bodyMd": "# STP Phase 2 Reporting & Finalisation\n\nEnsures timely and accurate STP reporting to ATO including Phase 2 requirements.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-officer", "payroll-manager", "finance"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-10T00:00:00Z",
+      "updatedAt": "2024-01-10T00:00:00Z"
+    },
+    {
+      "id": "pol-006",
+      "code": "POL-06",
+      "title": "Superannuation Guarantee & Choice/Stapled Funds",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-officer",
+        "A": "payroll-manager",
+        "S": ["hr", "finance"],
+        "C": ["super-funds"],
+        "I": ["all-employees"]
+      },
+      "review": {
+        "frequency": "Quarterly",
+        "nextReviewISO": "2025-01-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-006",
+        "versions": [{
+          "id": "v1-006",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-01-10T00:00:00Z",
+          "bodyMd": "# Superannuation Guarantee & Choice/Stapled Funds\n\nEnsures SG compliance, choice of fund offering, and stapled fund lookups.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-officer", "hr-officer"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-10T00:00:00Z",
+      "updatedAt": "2024-01-10T00:00:00Z"
+    },
+    {
+      "id": "pol-007",
+      "code": "POL-07",
+      "title": "Payslips & Recordkeeping (1-day rule)",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-officer",
+        "A": "payroll-manager",
+        "S": ["it"],
+        "C": ["employees"],
+        "I": ["fwo"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-007",
+        "versions": [{
+          "id": "v1-007",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-01-15T00:00:00Z",
+          "bodyMd": "# Payslips & Recordkeeping\n\nEnsures payslips provided within 1 business day and records retained for 7 years.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-officer", "payroll-manager"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-15T00:00:00Z",
+      "updatedAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "id": "pol-008",
+      "code": "POL-08",
+      "title": "Overpayments & Underpayments Remediation",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-manager",
+        "A": "cfo",
+        "S": ["legal", "hr"],
+        "C": ["employees", "fwo"],
+        "I": ["board"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-008",
+        "versions": [{
+          "id": "v1-008",
+          "v": "1.0",
+          "author": "CFO",
+          "createdAt": "2024-01-20T00:00:00Z",
+          "bodyMd": "# Overpayments & Underpayments Remediation\n\nDefines process for identifying, calculating, and remediating pay errors.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-manager", "cfo", "legal"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-20T00:00:00Z",
+      "updatedAt": "2024-01-20T00:00:00Z"
+    },
+    {
+      "id": "pol-009",
+      "code": "POL-09",
+      "title": "Child Support Deductions & Remittance",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-officer",
+        "A": "payroll-manager",
+        "S": ["finance"],
+        "C": ["child-support-agency"],
+        "I": ["employees"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-11-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-009",
+        "versions": [{
+          "id": "v1-009",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-02-01T00:00:00Z",
+          "bodyMd": "# Child Support Deductions & Remittance\n\nEnsures compliant deduction and remittance of child support payments.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-officer", "payroll-manager"],
+        "scope": "All"
+      },
+      "createdAt": "2024-02-01T00:00:00Z",
+      "updatedAt": "2024-02-01T00:00:00Z"
+    },
+    {
+      "id": "pol-010",
+      "code": "POL-10",
+      "title": "Payroll Privacy, TFN & Data Security",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-privacy-officer",
+      "rasci": {
+        "R": "privacy-officer",
+        "A": "cfo",
+        "S": ["it-security", "payroll-manager"],
+        "C": ["legal"],
+        "I": ["all-staff"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-010",
+        "versions": [{
+          "id": "v1-010",
+          "v": "1.0",
+          "author": "Privacy Officer",
+          "createdAt": "2024-01-15T00:00:00Z",
+          "bodyMd": "# Payroll Privacy, TFN & Data Security\n\nProtects employee privacy and TFN data per Privacy Act 1988 and TFN Guidelines.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-officer", "payroll-manager", "it-security"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-15T00:00:00Z",
+      "updatedAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "id": "pol-011",
+      "code": "POL-11",
+      "title": "Leave & Entitlements (NES + Award)",
+      "category": "Core",
+      "status": "Approved",
+      "ownerId": "user-hr-manager",
+      "rasci": {
+        "R": "hr-manager",
+        "A": "cfo",
+        "S": ["payroll-manager"],
+        "C": ["legal"],
+        "I": ["line-managers"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-11-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-011",
+        "versions": [{
+          "id": "v1-011",
+          "v": "1.0",
+          "author": "HR Manager",
+          "createdAt": "2024-02-15T00:00:00Z",
+          "bodyMd": "# Leave & Entitlements (NES + Award)\n\nDefines leave accrual, usage, payout rules per NES and applicable Awards.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["hr-officer", "payroll-officer", "line-managers"],
+        "scope": "All"
+      },
+      "createdAt": "2024-02-15T00:00:00Z",
+      "updatedAt": "2024-09-01T00:00:00Z"
+    },
+    {
+      "id": "pol-012",
+      "code": "POL-12",
+      "title": "Onboarding & Termination Compliance",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-hr-manager",
+      "rasci": {
+        "R": "hr-officer",
+        "A": "hr-manager",
+        "S": ["payroll-officer"],
+        "C": ["line-managers"],
+        "I": ["employees"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-012",
+        "versions": [{
+          "id": "v1-012",
+          "v": "1.0",
+          "author": "HR Manager",
+          "createdAt": "2024-01-20T00:00:00Z",
+          "bodyMd": "# Onboarding & Termination Compliance\n\nEnsures FWIS, CEIS, FTCIS, VEVO checks and correct STP cessation codes.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["hr-officer", "payroll-officer"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-20T00:00:00Z",
+      "updatedAt": "2024-01-20T00:00:00Z"
+    },
+    {
+      "id": "pol-013",
+      "code": "POL-13",
+      "title": "Payroll Tax & Grouping (Multi-state)",
+      "category": "Complex",
+      "status": "In Review",
+      "ownerId": "user-tax-manager",
+      "rasci": {
+        "R": "tax-manager",
+        "A": "cfo",
+        "S": ["payroll-manager", "legal"],
+        "C": ["state-revenue-offices"],
+        "I": ["finance"]
+      },
+      "review": {
+        "frequency": "Quarterly",
+        "nextReviewISO": "2025-01-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-013",
+        "versions": [{
+          "id": "v1-013",
+          "v": "1.0",
+          "author": "Tax Manager",
+          "createdAt": "2024-03-01T00:00:00Z",
+          "bodyMd": "# Payroll Tax & Grouping\n\nManages multi-state payroll tax obligations and grouping provisions.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["tax-manager", "payroll-manager", "cfo"],
+        "scope": "All"
+      },
+      "createdAt": "2024-03-01T00:00:00Z",
+      "updatedAt": "2024-09-20T00:00:00Z"
+    },
+    {
+      "id": "pol-014",
+      "code": "POL-14",
+      "title": "Long Service Leave (State & Portable LSL)",
+      "category": "Complex",
+      "status": "Draft",
+      "ownerId": "user-hr-manager",
+      "rasci": {
+        "R": "hr-manager",
+        "A": "cfo",
+        "S": ["payroll-manager", "legal"],
+        "C": ["state-lsl-authorities"],
+        "I": ["employees"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-10-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-014",
+        "versions": [{
+          "id": "v1-014",
+          "v": "1.0",
+          "author": "HR Manager",
+          "createdAt": "2024-09-01T00:00:00Z",
+          "bodyMd": "# Long Service Leave (State & Portable)\n\nManages state-based LSL and portable LSL schemes (construction, community services, etc.).",
+          "changeNote": "Initial draft"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["hr-officer", "payroll-officer"],
+        "scope": "All"
+      },
+      "createdAt": "2024-09-01T00:00:00Z",
+      "updatedAt": "2024-09-15T00:00:00Z"
+    },
+    {
+      "id": "pol-015",
+      "code": "POL-15",
+      "title": "Workers' Compensation Wages & Premiums",
+      "category": "Complex",
+      "status": "Published",
+      "ownerId": "user-risk-manager",
+      "rasci": {
+        "R": "risk-manager",
+        "A": "cfo",
+        "S": ["payroll-manager", "hr"],
+        "C": ["workcover-authorities"],
+        "I": ["finance"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-11-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-015",
+        "versions": [{
+          "id": "v1-015",
+          "v": "1.0",
+          "author": "Risk Manager",
+          "createdAt": "2024-02-01T00:00:00Z",
+          "bodyMd": "# Workers' Compensation Wages & Premiums\n\nEnsures accurate declaration of wages and calculation of WorkCover premiums.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["risk-manager", "payroll-manager", "finance"],
+        "scope": "All"
+      },
+      "createdAt": "2024-02-01T00:00:00Z",
+      "updatedAt": "2024-02-01T00:00:00Z"
+    },
+    {
+      "id": "pol-016",
+      "code": "POL-16",
+      "title": "Fringe Benefits Tax & RFBA via STP",
+      "category": "Complex",
+      "status": "Published",
+      "ownerId": "user-tax-manager",
+      "rasci": {
+        "R": "tax-manager",
+        "A": "cfo",
+        "S": ["payroll-manager"],
+        "C": ["ato"],
+        "I": ["employees"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-05-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-016",
+        "versions": [{
+          "id": "v1-016",
+          "v": "1.0",
+          "author": "Tax Manager",
+          "createdAt": "2024-03-15T00:00:00Z",
+          "bodyMd": "# Fringe Benefits Tax & RFBA via STP\n\nManages FBT liability and reporting of Reportable Fringe Benefits Amounts via STP.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["tax-manager", "payroll-officer"],
+        "scope": "All"
+      },
+      "createdAt": "2024-03-15T00:00:00Z",
+      "updatedAt": "2024-03-15T00:00:00Z"
+    },
+    {
+      "id": "pol-017",
+      "code": "POL-17",
+      "title": "Independent Contractors & Labour Hire",
+      "category": "Complex",
+      "status": "Approved",
+      "ownerId": "user-legal-counsel",
+      "rasci": {
+        "R": "legal-counsel",
+        "A": "cfo",
+        "S": ["hr-manager", "payroll-manager"],
+        "C": ["procurement"],
+        "I": ["hiring-managers"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-017",
+        "versions": [{
+          "id": "v1-017",
+          "v": "1.0",
+          "author": "Legal Counsel",
+          "createdAt": "2024-04-01T00:00:00Z",
+          "bodyMd": "# Independent Contractors & Labour Hire\n\nPrevents sham contracting and ensures compliance with contractor/employee distinction.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["legal", "hr-manager", "hiring-managers"],
+        "scope": "All"
+      },
+      "createdAt": "2024-04-01T00:00:00Z",
+      "updatedAt": "2024-09-10T00:00:00Z"
+    },
+    {
+      "id": "pol-018",
+      "code": "POL-18",
+      "title": "Annualised Wage Arrangements & Outer Limits",
+      "category": "Complex",
+      "status": "Published",
+      "ownerId": "user-payroll-manager",
+      "rasci": {
+        "R": "payroll-manager",
+        "A": "cfo",
+        "S": ["hr-manager", "legal"],
+        "C": ["employees"],
+        "I": ["fwo"]
+      },
+      "review": {
+        "frequency": "Quarterly",
+        "nextReviewISO": "2024-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-018",
+        "versions": [{
+          "id": "v1-018",
+          "v": "1.0",
+          "author": "Payroll Manager",
+          "createdAt": "2024-05-01T00:00:00Z",
+          "bodyMd": "# Annualised Wage Arrangements & Outer Limits\n\nEnsures compliance with annualised salary arrangements and outer limits reconciliation.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["payroll-manager", "hr-manager"],
+        "scope": "All"
+      },
+      "createdAt": "2024-05-01T00:00:00Z",
+      "updatedAt": "2024-05-01T00:00:00Z"
+    },
+    {
+      "id": "pol-019",
+      "code": "POL-19",
+      "title": "Multi-entity & Intercompany Payroll Controls",
+      "category": "Complex",
+      "status": "Published",
+      "ownerId": "user-finance-director",
+      "rasci": {
+        "R": "finance-director",
+        "A": "cfo",
+        "S": ["payroll-manager", "tax-manager"],
+        "C": ["auditors"],
+        "I": ["legal-entities"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-019",
+        "versions": [{
+          "id": "v1-019",
+          "v": "1.0",
+          "author": "Finance Director",
+          "createdAt": "2024-03-01T00:00:00Z",
+          "bodyMd": "# Multi-entity & Intercompany Payroll Controls\n\nManages payroll across multiple legal entities and intercompany recharges.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["finance-director", "payroll-manager", "tax-manager"],
+        "scope": "All"
+      },
+      "createdAt": "2024-03-01T00:00:00Z",
+      "updatedAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "id": "pol-020",
+      "code": "POL-20",
+      "title": "Evidence, Legal Hold & Audit Trail Management",
+      "category": "Core",
+      "status": "Published",
+      "ownerId": "user-legal-counsel",
+      "rasci": {
+        "R": "legal-counsel",
+        "A": "cfo",
+        "S": ["it-security", "payroll-manager"],
+        "C": ["auditors", "fwo"],
+        "I": ["all-staff"]
+      },
+      "review": {
+        "frequency": "Annual",
+        "nextReviewISO": "2025-12-01T00:00:00Z"
+      },
+      "content": {
+        "currentVersionId": "v1-020",
+        "versions": [{
+          "id": "v1-020",
+          "v": "1.0",
+          "author": "Legal Counsel",
+          "createdAt": "2024-01-15T00:00:00Z",
+          "bodyMd": "# Evidence, Legal Hold & Audit Trail Management\n\nEnsures retention, preservation, and production of payroll evidence per s535 Fair Work Act.",
+          "changeNote": "Initial policy"
+        }]
+      },
+      "mappings": {
+        "obligationIds": [],
+        "controlRefs": []
+      },
+      "evidenceIds": [],
+      "exceptions": [],
+      "attestations": {
+        "requiredRoles": ["legal", "payroll-manager", "it-security"],
+        "scope": "All"
+      },
+      "createdAt": "2024-01-15T00:00:00Z",
+      "updatedAt": "2024-01-15T00:00:00Z"
+    }
+  ]
+}
